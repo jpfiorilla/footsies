@@ -48,6 +48,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(
-  connect(state => state.reducer, { sampleAction })(App)
-);
+export default withRouter(connect(state => state, { sampleAction })(App));

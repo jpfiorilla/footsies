@@ -1,4 +1,5 @@
 export const TOGGLE_LOOP = 'TOGGLE_LOOP';
+export const SET_SPEED = 'SET_SPEED';
 
 export function toggleLoop() {
   return {
@@ -6,4 +7,11 @@ export function toggleLoop() {
   };
 }
 
-export default { toggleLoop };
+export function setSpeed(speed) {
+  return {
+    type: SET_SPEED,
+    payload: {
+      speed
+    }
+  };
+}
