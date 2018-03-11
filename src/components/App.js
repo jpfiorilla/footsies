@@ -13,7 +13,7 @@ import {
   DefaultComponent
 } from '.';
 import { SEO } from './common';
-import Root from './root';
+import { Root } from './root';
 /* eslint-disable no-unused-vars */
 import colors from '../main.scss';
 /* eslint-enable */
@@ -27,7 +27,7 @@ class App extends React.Component {
 
         <Switch>
           {/*<Route exact path="/" component={Home} />*/}
-          <Route exact path={'/' || '/app'} component={Root} />
+          <Route exact path={'/'} component={Root} />
           {pages.map(page => {
             const Component = components[page.component] || DefaultComponent;
             return (

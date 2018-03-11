@@ -1,0 +1,9 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+#Player {
+  display: flex;
+  background-color: $darkBlue;
+  align-items: center;
+  justify-content: center;
+}

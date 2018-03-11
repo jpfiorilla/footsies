@@ -1,12 +1,9 @@
-export const SAMPLE_ACTION = 'SAMPLE_ACTION';
+export const TOGGLE_LOOP = 'TOGGLE_LOOP';
 
-export function sampleAction(sampleProp) {
+export function toggleLoop() {
   return {
-    type: SAMPLE_ACTION,
-    payload: {
-      sampleProp,
-    },
+    type: TOGGLE_LOOP
   };
 }
 
-export default { sampleAction };
+export default { toggleLoop };
