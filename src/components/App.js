@@ -11,8 +11,9 @@ import {
   Footer,
   SEO,
   components,
-  DefaultComponent,
+  DefaultComponent
 } from '.';
+import Root from './root/Root.js';
 /* eslint-disable no-unused-vars */
 import colors from '../main.scss';
 /* eslint-enable */
@@ -25,8 +26,9 @@ class App extends React.Component {
         <Header />
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          {pages.map((page) => {
+          {/*<Route exact path="/" component={Home} />*/}
+          <Route exact path={'/' || '/app'} component={Root} />
+          {pages.map(page => {
             const Component = components[page.component] || DefaultComponent;
             return (
               <Route
@@ -47,5 +49,5 @@ class App extends React.Component {
 }
 
 export default withRouter(
-  connect(state => state.reducer, { sampleAction })(App),
+  connect(state => state.reducer, { sampleAction })(App)
 );
