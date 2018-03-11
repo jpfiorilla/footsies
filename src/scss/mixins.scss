@@ -1,0 +1,30 @@
+@mixin clickAnimation($opacity: 0.5, $time: 150ms) {
+  opacity: 1;
+  transform: $time ease;
+  &:hover {
+    transform: translateY(-1px);
+    opacity: $opacity;
+  }
+  &:active,
+  &.active {
+    transform: translateY(2px);
+  }
+}
+
+@mixin antialiasing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@mixin grabbing() {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+@mixin noSelect() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

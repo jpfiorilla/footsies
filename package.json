@@ -1,0 +1,52 @@
+{
+  "name": "spa-github-pages",
+  "version": "5.1.0",
+  "private": true,
+  "description": "Single Page Apps for GitHub Pages",
+  "scripts": {
+    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafrex/spa-github-pages.git"
+  },
+  "author": "Rafael Pedicini <code@rafrex.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.sample": "^4.2.1",
+    "lodash.startcase": "^4.4.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-social-icons": "^2.8.1",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "node-sass": "^4.7.2",
+    "piecewisecss": "^1.7.6",
+    "react-transition-group": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "scss-react-transition": "^0.2.2",
+    "style-loader": "^0.20.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
