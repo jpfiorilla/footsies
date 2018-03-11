@@ -9,11 +9,11 @@ import {
   PageNotFound,
   Header,
   Footer,
-  SEO,
   components,
   DefaultComponent
 } from '.';
-import Root from './root/Root.js';
+import { SEO } from './common';
+import Root from './root';
 /* eslint-disable no-unused-vars */
 import colors from '../main.scss';
 /* eslint-enable */

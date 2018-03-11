@@ -25,7 +25,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-social-icons": "^2.8.1",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "tone": "^0.11.11"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

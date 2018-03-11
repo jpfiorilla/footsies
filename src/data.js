@@ -1,18 +1,14 @@
 // CONTENT
 
-export const siteName = 'Site Name';
+export const siteName = 'Footsies';
 
 export const email = '';
 
 export const pages = [
   {
     title: 'Testing title',
-    path: '/test',
-  },
-  {
-    title: '123',
-    path: '/testing',
-  },
+    path: '/test'
+  }
 ];
 
 export const facebookPage = '';
@@ -35,7 +31,7 @@ export const socialMediaImages = {
   // 1200 x 660px
   twitter: [],
   // 1080 x 608px
-  google: [],
+  google: []
 };
 
 /*
@@ -43,4 +39,4 @@ export const socialMediaImages = {
   go to schema.org and pick the most relevant type for your site or business
   (eg, if you make videogames, search "videogames").
 */
-export const schema = ''; // 'VideoGames'
+export const schema = 'VideoGames'; // 'VideoGames'

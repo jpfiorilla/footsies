@@ -2,7 +2,7 @@ import React from 'react';
 import camel from 'lodash.camelcase';
 // import { Switch, Route } from 'react-router-dom';
 // import ExampleTwoDeepComponent from './ExampleTwoDeepComponent';
-import { SEO } from '.';
+import { SEO } from './common';
 import { getTitleFromPathname } from '../utils';
 
 export default class DefaultComponent extends React.Component {
@@ -11,7 +11,7 @@ export default class DefaultComponent extends React.Component {
       location,
       path,
       title = getTitleFromPathname(location || path),
-      description,
+      description
     } = this.props;
     return (
       // <Switch>

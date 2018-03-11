@@ -1,12 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import sample from 'lodash.sample';
-import { siteName, twitterHandle, schema, socialMediaImages } from '../data';
+import { siteName, twitterHandle, schema, socialMediaImages } from '../../data';
 
 const allImages = [
   ...socialMediaImages.facebook,
   ...socialMediaImages.twitter,
-  ...socialMediaImages.google,
+  ...socialMediaImages.google
 ];
 const facebookImages = socialMediaImages.facebook.length
   ? socialMediaImages.facebook
@@ -29,7 +29,7 @@ const getMetaTags = ({
   updated,
   category,
   tags,
-  twitter = twitterName,
+  twitter = twitterName
 }) => {
   const metaTitle = title ? `${title} | ${siteName}` : siteName;
   const metaTags = [
@@ -47,7 +47,7 @@ const getMetaTags = ({
     { name: 'og:url', content: url },
     { name: 'og:image', content: sample(facebookImages) },
     { name: 'og:description', content: description },
-    { name: 'og:site_name', content: siteName },
+    { name: 'og:site_name', content: siteName }
     // { name: 'fb:app_id', content: '<FB App ID>' },
   ];
 
@@ -57,20 +57,20 @@ const getMetaTags = ({
 const SEO = ({
   title = '',
   description = '',
-  path = window.location.href || '',
+  path = window.location.href || ''
 }) => (
   <Helmet
     title={title ? `${title} | ${siteName}` : siteName || ''}
     htmlAttributes={{
       lang: 'en',
       itemscope: undefined,
-      itemtype: `http://schema.org/${schema}`,
+      itemtype: `http://schema.org/${schema}`
     }}
     link={[{ rel: 'canonical', href: path }]}
     meta={getMetaTags({
       title,
       description,
-      url: location.href,
+      url: location.href
     })}
   />
 );
